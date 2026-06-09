@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { @apply bg-gray-50 text-gray-900 antialiased; }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+}
+
+@layer components {
+  .form-input {
+    @apply w-full px-3 py-2.5 border border-gray-300 rounded-lg text-sm
+    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+    disabled:bg-gray-100 disabled:cursor-not-allowed transition-colors;
+  }
+  .form-input-error { @apply border-red-400 focus:ring-red-400; }
+  .btn-primary {
+    @apply px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium text-sm
+    hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+    disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+  }
+  .btn-secondary {
+    @apply px-6 py-2.5 bg-white text-gray-700 border border-gray-300 rounded-lg font-medium text-sm
+    hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2
+    disabled:opacity-50 transition-colors;
+  }
+  .step-card { @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6; }
+  .field-label { @apply block text-sm font-medium text-gray-700 mb-1; }
+  .error-msg { @apply text-xs text-red-600 mt-1; }
+  .verify-badge { @apply inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full; }
+}
