@@ -70,3 +70,5 @@ export function useFormPersistence() {
 
   return { loadDraft, clearDraft, restoreDraft };
 }
+
+// Auto-save fires every 30 seconds; manual save triggered on each step transition
