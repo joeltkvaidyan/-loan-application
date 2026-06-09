@@ -1,0 +1,15 @@
+{
+  "loanType": "business",
+  "loanAmount": 2000000,
+  "loanTenure": "60",
+  "loanPurpose": "expansion",
+  "fullName": "Vikram Patel",
+  "dateOfBirth": "1980-08-10",
+  "pan": "ABCVP4567C",
+  "aadhaar": "499118665234",
+  "employmentType": "business_owner",
+  "businessName": "Patel Enterprises",
+  "annualTurnover": 5000000,
+  "gstNumber": "27ABCDE1234F1Z5",
+  "yearsInBusiness": 5
+}
