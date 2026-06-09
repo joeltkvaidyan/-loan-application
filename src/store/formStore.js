@@ -82,3 +82,6 @@ export const useFormStore = create((set, get) => ({
 
 // IMPORTANT: Step 6 threshold is STRICTLY GREATER THAN ₹5,00,000 for personal
 // and ₹20,00,000 for business. Exactly equal does NOT trigger Step 6.
+
+// activeSteps() is the single source of truth for wizard navigation order.
+// Wizard.jsx reads this on every render to show/hide steps reactively.
