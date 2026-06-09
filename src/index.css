@@ -31,3 +31,9 @@
   .error-msg { @apply text-xs text-red-600 mt-1; }
   .verify-badge { @apply inline-flex items-center gap-1 text-xs font-medium px-2 py-0.5 rounded-full; }
 }
+
+/* Keyboard focus ring — WCAG 2.1 AA */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
