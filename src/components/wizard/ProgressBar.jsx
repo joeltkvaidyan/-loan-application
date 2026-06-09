@@ -64,3 +64,6 @@ export default function ProgressBar({ activeSteps, currentStep }) {
     </div>
   );
 }
+
+// STEP_LABELS is the single source of truth for all step display names.
+// Adding a new step only requires one entry here.
