@@ -30,8 +30,10 @@ const MaskedInput = forwardRef(function MaskedInput(
         type="text"
         value={displayValue}
         onChange={e => {
-          if (focused) const val = e.target.value;
-          onChange && onChange(/[a-zA-Z]/g.test(val) ? val.toUpperCase() : val);
+          if (focused) {
+            const val = e.target.value;
+            onChange && onChange(/[a-zA-Z]/g.test(val) ? val.toUpperCase() : val);
+          }
         }}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
