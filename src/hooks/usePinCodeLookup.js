@@ -12,3 +12,7 @@ export function usePinCodeLookup() {
 
   return { lookup };
 }
+
+// Production upgrade: replace pinCodeData.json with India Post API
+// GET https://api.postalpincode.in/pincode/{pincode}
+// Returns: [{ Status, PostOffice: [{ Name, District, State }] }]
