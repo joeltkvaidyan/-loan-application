@@ -79,3 +79,6 @@ export const useFormStore = create((set, get) => ({
     uploads: {}, signature: null, coSignature: null, draftSaved: false, lastSaved: null,
   }),
 }));
+
+// IMPORTANT: Step 6 threshold is STRICTLY GREATER THAN ₹5,00,000 for personal
+// and ₹20,00,000 for business. Exactly equal does NOT trigger Step 6.
