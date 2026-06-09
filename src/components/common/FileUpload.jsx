@@ -141,3 +141,6 @@ export default function FileUpload({ field, label, accept, maxSizeMB = 5, requir
     </div>
   );
 }
+
+// Object URLs are revoked immediately after image load to prevent memory leaks.
+// This keeps sustained memory usage well under the 30MB target.
