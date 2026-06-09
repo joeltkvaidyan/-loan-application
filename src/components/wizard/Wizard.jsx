@@ -123,3 +123,6 @@ export default function Wizard({ onComplete }) {
     </div>
   );
 }
+
+// All step components are lazy-loaded (React.lazy + Suspense).
+// This keeps the main bundle under 200KB gzip and defers step JS until needed.
