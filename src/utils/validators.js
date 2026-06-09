@@ -81,3 +81,5 @@ export function validatePassport(p) {
 export function validateReferralCode(code) {
   return /^[A-Z0-9]{6,10}$/i.test(code);
 }
+
+// Note: H (HUF) and A (AOP) entity types are explicitly rejected by LendSwift per business rules
