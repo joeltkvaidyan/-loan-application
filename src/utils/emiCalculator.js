@@ -49,3 +49,6 @@ export function maskAadhaar(aadhaar) {
   const digits = aadhaar.replace(/\s/g, '');
   return '·'.repeat(digits.length - 4) + digits.slice(-4);
 }
+
+// Processing fee: min ₹2,000 max ₹25,000 per LendSwift fee schedule
+// Formula: max(min(P * 1%, 25000), 2000)
