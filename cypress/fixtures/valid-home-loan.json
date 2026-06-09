@@ -1,0 +1,12 @@
+{
+  "loanType": "home",
+  "loanAmount": 5000000,
+  "loanTenure": "240",
+  "loanPurpose": "purchase",
+  "fullName": "Priya Sharma",
+  "dateOfBirth": "1985-03-22",
+  "pan": "ABCPS9876F",
+  "aadhaar": "499118665234",
+  "coApplicantName": "Arjun Sharma",
+  "coRelationship": "spouse"
+}
