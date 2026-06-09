@@ -18,7 +18,7 @@ export function validatePANForLoanType(pan, loanType) {
   return entityChar === 'P';
 }
 
-// Verhoeff Algorithm Tables
+// Verhoeff Algorithm Tables — order is critical: mult first, perm second, inv third
 const verhoeffMultTable = [
   [0,1,2,3,4,5,6,7,8,9],
   [1,2,3,4,0,6,7,8,9,5],
