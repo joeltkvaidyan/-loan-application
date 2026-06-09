@@ -144,3 +144,9 @@ export function schemaFactory(step, fullFormState) {
     default: return z.object({});
   }
 }
+
+/**
+ * schemaFactory is intentionally runtime (not compile-time) so that
+ * cross-step dependencies like age+tenure and income ratios are always
+ * re-evaluated with the latest formState on each step submission.
+ */
