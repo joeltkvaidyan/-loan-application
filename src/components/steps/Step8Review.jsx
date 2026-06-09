@@ -174,3 +174,10 @@ export default function Step8Review({ onPrev, onGoToStep, onSubmit: onFinalSubmi
     </form>
   );
 }
+
+// RBI DL/2022/01 compliance checklist:
+// [x] Data minimality — only spec fields collected
+// [x] Explicit consent — 4 separate checkboxes, none pre-ticked
+// [x] KFS shown before submission
+// [x] Cooling-off period disclosed
+// [x] Grievance redressal details present
