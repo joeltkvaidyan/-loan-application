@@ -91,7 +91,7 @@ export default function Step8Review({ onPrev, onGoToStep, onSubmit: onFinalSubmi
             </div>
           ))}
         </div>
-        {emiRatio > 50 && (
+        {emiRatio > 50 // RBI guideline: flag if EMI exceeds 50% of combined income && (
           <div className="mt-3 bg-yellow-400/20 border border-yellow-300/30 rounded-lg p-2.5">
             <p className="text-xs text-yellow-200">
               ⚠️ EMI-to-income ratio is {emiRatio.toFixed(1)}% (above 50%). This may affect approval.
